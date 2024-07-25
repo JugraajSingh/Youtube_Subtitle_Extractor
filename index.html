@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>YouTube Subtitle Extractor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #subtitles-container p {
+            margin: 5px 0;
+        }
+        .github-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .github-link img {
+            width: 32px;
+            height: 32px;
+        }
+        #go-back {
+            display: none; /* Initially hidden */
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #go-back:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Subtitle Extractor</h1>
+    <form id="subtitle-form">
+        <label for="api-key">Enter API Key:</label>
+        <input type="text" id="api-key" placeholder="Your OpenAI API Key" required>
+        <button type="button" id="save-api-key">Save API Key</button>
+        <a href="https://platform.openai.com/api-keys" target="_blank" class="create-api-key-button">Create API Key</a>
+        <br><br>
+        <label for="video-url">Enter Video URL:</label>
+        <input type="text" id="video-url" placeholder="YouTube Video URL" required>
+        <button type="submit">Get Subtitles</button>
+    </form>
+    <div id="subtitles-container" style="display:none;">
+        <h2>Subtitles:</h2>
+        <div id="subtitles"></div>
+        <button id="go-back">Go Back</button> <!-- Go Back Button -->
+    </div>
+    
+    <a href="https://github.com/JugraajSingh" target="_blank" class="github-link">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>

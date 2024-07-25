@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.github-link {
+    position: fixed; /* Fixed to always be in view */
+    top: 20px;
+    right: 20px;
+}
+
+.github-link img {
+    width: 32px;
+    height: 32px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 90%; /* Adjusted to be slightly smaller than the screen width */
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white; /* Changed color to white for better contrast */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+button:hover {
+    background-color: #3d7c40;
+}
+
+.create-api-key-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+.create-api-key-button:hover {
+    background-color: #0056b3;
+}
+
+.go-back-button {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.go-back-button:hover {
+    background-color: #c0392b;
+}
+
+#subtitles-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 12px; /* Slightly curved corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 100%;
+    max-width: 80%; /* Smaller than the full screen width */
+    box-sizing: border-box;
+}
+
+#subtitles-container h2 {
+    margin-top: 0;
+}
+
+#subtitles-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+#subtitles-container p {
+    background-color: #f0f0f0; /* Slightly grey background for individual subtitles */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Slightly curved corners */
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
